@@ -11,6 +11,8 @@ vim.keymap.set("n", "0", "^")
 vim.keymap.set("n", "^", "0")
 vim.keymap.set("n", "<leader>x", ":q<CR>")
 vim.keymap.set("n", "<leader>/", "<leader>gcc")
+vim.keymap.set("n", "<Tab>", ":bnext<CR>")
+vim.keymap.set("n", "<S-Tab>", ":bprev<CR>")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
@@ -42,3 +44,16 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
+
+local diagnostics_active = true
+
+vim.keymap.set("n", "<leader>td", function()
+	diagnostics_active = not diagnostics_active
+	if diagnostics_active then
+		vim.diagnostic.enable()
+		print("diagnostics on")
+	else
+		vim.diagnostic.enable(false)
+		print("diagnostics off")
+	end
+end, { desc = "[T]oggle [D]iagnostics" })

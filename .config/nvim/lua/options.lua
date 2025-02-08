@@ -18,6 +18,9 @@ vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 vim.o.splitright = true
 vim.o.splitbelow = true
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+vim.o.expandtab = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
