@@ -18,7 +18,7 @@ config.tab_bar_at_bottom = true
 config.keys = {
   {
     key = 'n',
-    mods = 'SHIFT',
+    mods = 'SUPER|SHIFT',
     action = wez.action.ToggleFullScreen,
   },
 }
