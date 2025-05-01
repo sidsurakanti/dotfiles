@@ -78,6 +78,11 @@
             "format": "├────────────┼──────────────────────────────────────────┤"
         },
         {
+            "type": "gpu",
+            "key": "│ GRAPHICS   │{$1}",
+            "format": "{name}"
+        },
+        {
             "type": "cpu",
             "key": "│ PROCESSOR  │{$1}",
             "format": "{name}"
@@ -87,11 +92,6 @@
             "key": "│ CORES      │{$1}",
             "format": "{cores-physical} PHYSICAL CORES / {cores-logical} THREADS",
             "showPeCoreCount": false
-        },
-        {
-            "type": "cpu",
-            "key": "│ CPU FREQ   │{$1}",
-            "format": "{freq-max}{/freq-max}{freq-base}{/}"
         },
         {
             "type": "loadavg",
