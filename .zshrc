@@ -106,4 +106,6 @@ alias cls='clear'
 alias tr='tree -L 1'
 alias ..='cd ..'
 alias vim='nvim'
+alias loc='git ls-files | xargs wc -l'
+alias vsc='code .'
 fastfetch
