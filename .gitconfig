@@ -1,7 +1,16 @@
+[core]
+	excludesfile = ~/.gitignore
+	editor = nvim
+	ignorecase = false
 [user]
 	email = sidsurakanti1@gmail.com
 	name = sidsurakanti
 [color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+	grep = auto
 	ui = auto
 [pull]
 	rebase = true
@@ -10,3 +19,5 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[github]
+	user = sidsurakanti
