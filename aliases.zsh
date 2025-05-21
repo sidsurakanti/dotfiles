@@ -4,6 +4,7 @@ alias projects="cd $HOME/projects"
 alias dotfiles="cd $DOTFILES"
 
 alias watch="npm run dev"
+alias py="python3"
 
 alias commit="git add . && git commit -m"
 alias pull="git pull"
