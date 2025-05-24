@@ -6,7 +6,7 @@ files=(.zshrc .tmux.conf .gitconfig aliases.zsh .config .wezterm.lua)
 dir="$HOME/dotfiles"
 
 for file in $files; do
-    ln -sfT "$dir/$file" "$HOME/$file"
+    ln -sf "$dir/$file" "$HOME/$file"
 done
 
 echo "dotfiles linked!"
