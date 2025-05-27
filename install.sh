@@ -7,9 +7,12 @@ ln -sf ~/dotfiles/aliases.zsh ~/aliases.zsh
 
 # make sure /.config exists we can use it
 mkdir -p ~/.config
-ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
-mkdir -p ~/.config/fastfetch
-ln -sf ~/dotfiles/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
+# ln -sf ~/dotfiles/.config/starship.toml ~/.config/starship.toml
+ln -sf ~/dotfiles/.config/* ~/.config/
+# mkdir -p ~/.config/nvim
+# ln -sf ~/dotfiles/config/nvim ~/.config/
+# mkdir -p ~/.config/fastfetch
+# ln -sf ~/dotfiles/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 
 echo "dotfiles linked!"
