@@ -1,8 +1,7 @@
 alias reloads="omz reload"
 
 alias projects="cd $HOME/projects"
-alias dotfiles="cd $DOTFILES"
-
+alias dotfiles="cd $DOTFILES && nvim"
 alias watch="npm run dev"
 alias py="python3"
 

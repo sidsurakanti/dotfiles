@@ -4,6 +4,7 @@ echo "siminking dotfiles"
 
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/aliases.zsh ~/aliases.zsh
+ln -sf ~/dotfiles/.wezterm.lua ~/.wezterm.lua
 
 # make sure /.config exists we can use it
 mkdir -p ~/.config
