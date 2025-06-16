@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/Library/Python/3.9/bin:$PATH"
 export DOTFILES="$HOME/dotfiles"
 
 # ZSH_THEME="macovsky"
