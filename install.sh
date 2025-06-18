@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 echo "siminking dotfiles"
 
@@ -19,8 +19,8 @@ ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 echo "dotfiles linked!"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-		echo "installing starship and fastfetch via brew"
-		brew install starship fastfetch
+		echo "installing starship and fastfetch rg via brew"
+		brew install starship fastfetch ripgrep
 		echo "done installing packages."
 else
 	echo "skipping brew install" 
