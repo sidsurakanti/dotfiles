@@ -3,7 +3,9 @@ if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]; then
 fi
 
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$HOME/.local/bin:$HOME/Library/Python/3.9/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/Library/Python/3.9/bin:/usr/local/cuda-12.9/bin:$PATH"
+export LIBRARY_PATH="/usr/local/cuda-12.9/lib64:$LD_LIBRARY_PATH"
+export LIBRARY_PATH="/usr/local/cuda-12.9/lib64:$LIBRARY_PATH"
 export DOTFILES="$HOME/dotfiles"
 
 zstyle ':omz:update' mode auto      # update automatically without asking

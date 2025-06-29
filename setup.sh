@@ -59,8 +59,8 @@ clear
 echo "setting up brew env"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-pause "installing gcc neovim starship fastfetch ripgrep unzip tree..."
-brew install gcc neovim starship fastfetch ripgrep unzip tree
+pause "installing gcc cmake neovim starship fastfetch ripgrep unzip tree..."
+brew install gcc cmake neovim starship fastfetch ripgrep unzip tree cowsay lolcat
 clear
 
 pause "installing nvm..."
