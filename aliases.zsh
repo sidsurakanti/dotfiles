@@ -14,7 +14,7 @@ alias gc="git checkout"
 alias stash="git stash -u"
 
 alias cls='clear'
-alias tr='tree -L 1'
+alias tr='tree -a -L 1'
 alias ..='cd ..'
 alias vi='nvim .'
 alias loc='git ls-files | xargs wc -l'
