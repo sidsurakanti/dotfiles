@@ -2,7 +2,7 @@
 
 echo "simlinking dotfiles"
 
-files=(.zshrc .gitconfig aliases.zsh .config .wezterm.lua)
+files=(.zshrc .tmux.conf .gitconfig aliases.zsh .config .wezterm.lua)
 dir="$HOME/dotfiles"
 
 for file in $files; do
