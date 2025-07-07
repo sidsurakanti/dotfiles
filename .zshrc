@@ -30,3 +30,5 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(starship init zsh)"
 
 fastfetch
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
