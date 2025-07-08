@@ -9,8 +9,7 @@ sudo apt install zsh
 echo "setting default shell as zsh"
 chsh -s $(which zsh)
 
-echo "restarting shell..."
-exec zsh
+echo "will restart shell at the end of script"
 
 
 # https://github.com/ohmyzsh/ohmyzsh
@@ -47,5 +46,5 @@ echo "installing nvm"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
 echo "restarting shell..."
-exec "$SHELL"
+exec zsh
 
