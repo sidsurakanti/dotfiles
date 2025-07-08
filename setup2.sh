@@ -13,9 +13,7 @@ else
   echo "invalid input."
 fi
 
-echo "cloning dotfiles"
-git clone https://github.com/sidsurakanti/.dotfiles.git
-cd .dotfiles
+cd dotfiles
 chmod +x ./install.zsh
 ./install.zsh
 
