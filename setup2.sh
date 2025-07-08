@@ -2,12 +2,12 @@ echo "running setup pt2"
 
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 read -p "would you like to add github ssh? (y/n): " answer
-if [ "$answer" = "yes" ]; then
+if [ "$answer" = "y" ]; then
   read -p "please enter the email you use for your github account: " user_email
   ssh-keygen -t ed25519 -C "$user_email"
   cat ~/.ssh/id_ed25519.pub
   echo "please add the following key to github ssh"
-elif [ "$answer" = "no" ]; then
+elif [ "$answer" = "n" ]; then
   echo "canceled."
 else
   echo "invalid input."
