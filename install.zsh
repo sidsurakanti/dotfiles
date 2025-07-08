@@ -13,7 +13,7 @@ echo "dotfiles linked!"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
 		echo "installing deps w brew"
-		brew neovim install starship fastfetch ripgrep unzip
+		brew install neovim starship fastfetch ripgrep unzip tree
 		echo "done installing packages."
 else
 	echo "skipping brew install" 
