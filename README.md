@@ -16,6 +16,9 @@ If setting up linux/wsl machine for the first time:
 ```bash
 chmod +x ./setup.sh
 ./setup.sh
+# >>> are you resuming after oh my zsh install? (y/n):
+
+# don't forget to run it again after pt1 finishes
 ```
 Just dotfiles:
 ```bash
@@ -23,7 +26,7 @@ Just dotfiles:
 # https://brew.sh/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# make sure to have nvim, ripgrep, starship, fastfetch, omz, py & pip, unzip installed
+# make sure to have nvim, ripgrep, starship, fastfetch, omz, py & pip, unzip, nvm installed
 # ^ no need for that if on macos w brew
 chmod +x ./install.zsh
 ./install.zsh
