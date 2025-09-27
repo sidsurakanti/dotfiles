@@ -31,3 +31,10 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(starship init zsh)"
 fastfetch
+
+# bun completions
+[ -s "/Users/sidsurakanti/.bun/_bun" ] && source "/Users/sidsurakanti/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

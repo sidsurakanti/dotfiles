@@ -13,6 +13,7 @@ rtp:prepend(lazypath)
 
 return require("lazy").setup({
 	"NMAC427/guess-indent.nvim",
+	"github/copilot.vim",
 	{
 		"lewis6991/gitsigns.nvim",
 		opts = {
