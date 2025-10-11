@@ -7,12 +7,16 @@
   \/____/   \/_____/     \/_/   \/_/     \/_/   \/_____/   \/_____/   \/_____/ 
                                                                                
 ```
-Clone repo
+#### Clone repo
 ```bash
 git clone https://github.com/sidsurakanti/dotfiles.git
 cd dotfiles
 ```
-If setting up linux/wsl machine for the first time: 
+#### If setting up linux/wsl machine for the first time: 
+```bash
+# make sure you have a password set for later
+sudo passwd [user]
+```
 ```bash
 chmod +x ./setup.sh
 ./setup.sh
@@ -20,7 +24,7 @@ chmod +x ./setup.sh
 
 # don't forget to run it again after pt1 finishes
 ```
-Just dotfiles:
+#### Just dotfiles:
 ```bash
 # make sure brew's installed (on macos but works for linux too)
 # https://brew.sh/
