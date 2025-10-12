@@ -20,4 +20,4 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin d
 sudo usermod -aG docker $USER
 
 clear
-echo "%%%% DOCKER INSTALLED SUCCESSFULLY. %%%%"
+echo "%%%% DOCKER INSTALLED SUCCESSFULLY. Run 'newgrp docker' or lougout and login. %%%%"
