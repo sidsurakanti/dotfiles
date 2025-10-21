@@ -15,6 +15,12 @@ return require("lazy").setup({
 	"NMAC427/guess-indent.nvim",
 	"github/copilot.vim",
 	{
+		"supermaven-inc/supermaven-nvim",
+		config = function()
+			require("supermaven-nvim").setup({})
+		end,
+	},
+	{
 		"lewis6991/gitsigns.nvim",
 		opts = {
 			signs = {
@@ -402,7 +408,7 @@ return require("lazy").setup({
 				},
 			})
 
-			vim.cmd.colorscheme("tokyonight-night")
+			vim.cmd.colorscheme("tokyonight-moon")
 			-- transparency
 			vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 			vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })

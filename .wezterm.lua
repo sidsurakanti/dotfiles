@@ -12,6 +12,11 @@ config.automatically_reload_config = true
 config.use_fancy_tab_bar = false
 config.window_background_opacity = 0.965
 config.macos_window_background_blur = 10
+config.window_background_image = "/Users/sidsurakanti/dotfiles/wallpapers/nightcity.jpg"
+config.window_background_image_hsb = {
+	brightness = 0.05,
+	saturation = 1.2,
+}
 config.window_padding = { left = 0, right = 0, top = 30, bottom = 10 }
 config.window_decorations = "NONE"
 config.tab_bar_at_bottom = true
