@@ -35,6 +35,7 @@ return {
 		vim.keymap.set("n", "<leader>sd", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
 		vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "[S]earch [R]esume" })
 		vim.keymap.set("n", "<leader>b", builtin.buffers, { desc = "Find [B]uffers" })
+		vim.keymap.set("n", "<leader>j", builtin.lsp_document_symbols, { desc = "Symbols" })
 
 		vim.keymap.set("n", "<leader>sb", function()
 			builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
