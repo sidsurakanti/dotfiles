@@ -2,6 +2,8 @@
 	excludesfile = ~/.gitignore
 	editor = nvim
 	ignorecase = false
+	fsmonitor = true
+	untrackedcache = true
 [user]
 	email = sidsurakanti1@gmail.com
 	name = sidsurakanti
@@ -21,3 +23,9 @@
 	clean = git-lfs clean -- %f
 [github]
 	user = sidsurakanti
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[maintenance]
+	repo = /Users/sidsurakanti/projects/brainrot

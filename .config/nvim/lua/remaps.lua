@@ -8,12 +8,9 @@ remap("n", "<C-u>", "<C-u>zz")
 remap("n", "<C-d>", "<C-d>zz")
 remap("n", "0", "^")
 remap("n", "^", "0")
-remap("n", "<leader>x", ":q<CR>")
 remap("n", "<leader>/", "<leader>gcc")
 remap("n", "<Tab>", ":bnext<CR>")
 remap("n", "<S-Tab>", ":bprev<CR>")
-
-remap("n", "<leader>q", vim.diagnostic.setloclist, { desc = "open diagnostic quickfix list" })
 
 remap("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
