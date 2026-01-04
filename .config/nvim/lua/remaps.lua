@@ -2,18 +2,19 @@ local remap = vim.keymap.set
 
 remap("n", "<leader>pv", vim.cmd.Ex)
 remap("n", "<Esc>", "<cmd>nohlsearch<CR>")
-remap("n", "<leader><leader>", ":w<CR>")
+remap("n", "<leader><leader>", ":w<CR>") -- i dont use this
 remap("i", "jk", "<Esc>")
 remap("n", "<C-u>", "<C-u>zz")
 remap("n", "<C-d>", "<C-d>zz")
 remap("n", "0", "^")
 remap("n", "^", "0")
 remap("n", "<leader>/", "<leader>gcc")
-remap("n", "<Tab>", ":bnext<CR>")
-remap("n", "<S-Tab>", ":bprev<CR>")
+remap("n", "<Tab>", ":bnext<CR>", { silent = true })
+remap("n", "<S-Tab>", ":bprev<CR>", { silent = true })
 
 remap("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
+-- TODO: doesn't work for windows cus windows commands
 remap("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 remap("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 remap("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
