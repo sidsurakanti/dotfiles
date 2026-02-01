@@ -11,7 +11,6 @@ config.automatically_reload_config = true
 config.enable_tab_bar = false -- kill wezterm tabs
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
-config.disable_default_key_bindings = true -- tmux owns keybinds
 config.enable_scroll_bar = false
 
 config.window_background_opacity = 0.965
