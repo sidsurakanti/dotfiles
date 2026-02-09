@@ -38,3 +38,4 @@ fastfetch
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

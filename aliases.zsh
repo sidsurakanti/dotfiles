@@ -19,3 +19,6 @@ alias ..="cd .."
 alias vi="nvim ."
 alias loc="git ls-files | xargs wc -l"
 alias vsc="code ."
+
+alias dev="cd ~/dev/"
+alias gm="cd ~/dev/do"
